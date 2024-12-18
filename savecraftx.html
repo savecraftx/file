@@ -1,157 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>save craft x</title>
-  <meta name="description" content="jangan lupa mampir ke https://github.com/savecraftx" />
-  <meta property="og:title" content="save craft x" />
-  <meta property="og:description" content="jangan lupa mampir ke https://github.com/savecraftx" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" />
-  <meta property="og:url" content="https://github.com/savecraftx" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-<style>
-/* Global Styles */
-html,body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #121212;
-/* Warna latar tema gelap */
-color: #ffffff;
-/* Warna teks tema gelap */
-text-align: center;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Save Craft X - Gallery Links</title>
+  <meta name="description" content="Jangan lupa mampir ke https://github.com/savecraftx">
+  <meta property="og:title" content="Save Craft X - Gallery Links">
+  <meta property="og:description" content="Jangan lupa mampir ke https://github.com/savecraftx">
+  <meta property="og:image" content="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png">
+  <meta property="og:url" content="https://github.com/savecraftx">
+  <meta property="og:type" content="website">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-/* Logo Styles */
-.logo-container {
-margin-top: 20px;
-margin-bottom: 10px;
-text-align: center;
-}
+  <style>
+    /* Global Styles */
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      text-align: center;
+      overflow-x: hidden;
+    }
 
-.logo {
-width: 25%;
-/* Ukuran logo */
-height: auto;
-border-radius: 50%;
-/* Membuat logo berbentuk lingkaran */
-box-shadow: 0 4px 8px rgba(255, 152, 0, 0.5);
-/* Bayangan aksen */
-transition: transform 0.3s ease-in-out;
-cursor: none;
-}
+    /* Logo */
+    .logo-container {
+      margin: 20px auto 10px;
+    }
 
-.logo:hover {
-transform: scale(1.2);
-/* Efek zoom saat hover */
-}
+    .logo {
+      width: 20vw;
+      max-width: 150px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(255, 152, 0, 0.5);
+      transition: transform 0.3s ease-in-out;
+    }
 
-/* Header Styles */
-h1 {
-margin: 10px 0 20px;
-font-size: 2.5rem;
-color: #ff9800;
-/* Warna aksen oranye */
-text-transform: uppercase;
-letter-spacing: 3px;
-}
+    .logo:hover {
+      transform: scale(1.2);
+    }
 
-/* Gallery Styles */
-.gallery {
-display: grid;
-gap: 15px;
-padding: 20px;
-max-width: 1200px;
-margin: 0 auto;
-}
+    /* Header */
+    h1 {
+      font-size: 2rem;
+      margin: 10px 0 20px;
+      color: #ff9800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
 
-@media screen and (max-width: 480px) {
-.gallery {
-grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-}
-}
+    /* Gallery */
+    .gallery {
+      display: grid;
+      gap: 15px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 
-@media screen and (max-width: 720px) {
-.gallery {
-grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-}
-}
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+      background: linear-gradient(145deg, #1e1e1e, #393939);
+      transition: border 0.3s ease-in-out;
+    }
 
-@media screen and (max-width: 1280px) {
-.gallery {
-grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-}
-}
+    .gallery-item:hover {
+      border: 2px solid #ff9800;
+    }
 
-.gallery-item {
-overflow: hidden;
-border-radius: 12px;
-box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
-background: linear-gradient(145deg, #1e1e1e, #393939);
-}
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      opacity: 0.7;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
 
-.gallery-item img {
-opacity: 0.6;
-cursor: none;
-width: 100%;
-height: auto;
-display: block;
-transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
+    .gallery-item img:hover {
+      transform: scale(1.2);
+      opacity: 1;
+    }
 
-.gallery-item img:hover {
-transform: scale(1.2);
-opacity: 1.0;
-}
+    .gallery-item a {
+      text-decoration: none;
+      color: #ffffff;
+      display: block;
+      padding: 10px;
+      text-align: center;
+      font-size: 1rem;
+      transition: color 0.3s ease-in-out;
+    }
 
-.gallery-item:hover {
-border: 2px solid #ff9800;
-transition: border 0.3s ease-in-out;
-}
+    .gallery-item a:hover {
+      color: #ff9800;
+    }
 
-/* Scrollbar Customization */
-::-webkit-scrollbar {
-width: 10px;
-}
+    /* Media Queries */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
 
-::-webkit-scrollbar-thumb {
-background: #ff9800;
-border-radius: 10px;
-}
+      .logo {
+        width: 30vw;
+      }
 
-::-webkit-scrollbar-track {
-background: #1e1e1e;
-}
-</style>
+      .gallery {
+        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+
+      .gallery-item a {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.2rem;
+      }
+
+      .logo {
+        width: 40vw;
+      }
+
+      .gallery {
+        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+
+      .gallery-item a {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
-<!-- Logo -->
-<a href="#" class="logo-container">
-<img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Logo Pembuat" class="logo">
-</a>
-<h1>save craft x</h1>
-<div class="gallery">
-<a href="#" class="gallery-item">
-<img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Image 1">
-</a>
-<a href="#" class="gallery-item">
-<img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Image 2">
-</a>
-<a href="#" class="gallery-item">
-<img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Image 3">
-</a>
-<a href="#" class="gallery-item">
-<img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Image 4">
-</a>
-<a href="#" class="gallery-item">
-<img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Image 5">
-</a>
-<a href="#" class="gallery-item">
-<img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Image 6">
-</a>
-</div>
+  <!-- Logo -->
+  <a href="#" class="logo-container">
+    <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Logo Pembuat" class="logo">
+  </a>
+  
+  <h1>savecraftx Link</h1>
+  
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+    <div class="gallery-item">
+      <a href="" target="_blank">
+        <img src="https://raw.githubusercontent.com/savecraftx/file/main/savecraftx.png" alt="Thumbnail Blank">
+        Blank
+      </a>
+    </div>
+  </div>
 </body>
 </html>
